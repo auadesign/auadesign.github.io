@@ -1,0 +1,58 @@
+*{
+        font-family: "Share Tech Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(75, 39, 255);
+        text-transform: lowercase;
+        background-color: rgb(0, 0, 0);
+}
+
+h1{
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    text-align: right;
+    width: -33%;
+}
+
+h2{
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    text-align: right;
+    width: -33%;
+}
+
+ul{
+    list-style-type: none;
+    text-align: right;
+    width: -33%;
+}
+
+#pgraph{
+    font-size: .9em;
+    line-height: 1.1em;
+    text-align: justify;
+    width: 66%;
+}
+
+img{
+    width: 33%;
+    height: 33%;
+}
+
+a:link{
+    color:rgb(75, 39, 255);
+    text-decoration:underline dashed;
+}
+    a:visited{
+    color:rgb(176, 28, 255);
+}
+    a:hover{
+    color:rgb(255, 175, 28);
+}
+#foot{
+    background-image: repeating-conic-gradient(rgb(75, 39, 255),rgb(21, 4, 74) 10%)
+}
