@@ -1,10 +1,37 @@
+#wrapper{
+    width: 80%;
+    margin: auto;
+    position:relative;
+}
+
+.col-4 {width: 33.33%;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        float: right;
+        z-index: 1;
+}
+.col-8{
+    width: 66.66%;
+}
+
+#smiley{
+    position:absolute;
+    width: 50%;
+    float: right;
+    z-index: 2;
+}
+body{
+    background-color: black;
+}
 *{
+        margin: 0; 
+        padding: 0;
         font-family: "Share Tech Mono", monospace;
         font-weight: 400;
         font-style: normal;
         color: rgb(75, 39, 255);
         text-transform: lowercase;
-        background-color: rgb(0, 0, 0);
 }
 
 h1{
@@ -36,6 +63,7 @@ ul{
     line-height: 1.1em;
     text-align: justify;
     width: 66%;
+    overflow: auto;
 }
 
 img{
@@ -44,15 +72,18 @@ img{
 }
 
 a:link{
+    display: inline;
     color:rgb(75, 39, 255);
     text-decoration:underline dashed;
 }
     a:visited{
-    color:rgb(176, 28, 255);
+    color:rgb(255, 255, 255);
 }
     a:hover{
     color:rgb(255, 175, 28);
 }
 #foot{
-    background-image: repeating-conic-gradient(rgb(75, 39, 255),rgb(21, 4, 74) 10%)
+    padding-top: 10px;
+    float: right;
+    text-align: right;
 }
