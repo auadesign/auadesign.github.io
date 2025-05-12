@@ -3,6 +3,17 @@
     margin: auto;
     position:relative;
 }
+@media only screen and (max-width: 480px) {
+    .col-8 {
+        width: 100%;
+        float: left;
+        margin: 0%;
+    }
+} /* smaller than mobile
+*/
+@media only screen and (max-width: 979px) {} /* smaller than tablet
+*/
+@media only screen and (max-width: 1200px) {} /* smaller than desk */
 
 .col-4 {width: 33.33%;
         padding: 10px;
