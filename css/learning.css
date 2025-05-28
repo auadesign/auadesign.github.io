@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    color:blue;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@keyframes wee {
+    from {rotate: 0deg;}
+    to {rotate: 360deg;}
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#smiley {
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+    padding-top: 1rem;
+    transition: width 1s;
+}
+#smiley:hover {
+    animation-name: wee;
+    animation-duration: 5s;
+    width: 25%;
+}
+
+img{
+    width:100%;
+    position:relative;
+}
+
+
+ul{
+    list-style-type: none;
+    position:relative;
+    text-align: right;
+    width: -33%;
+}
+
+a:link{
+    display: inline;
+    color:rgb(75, 39, 255);
+    text-decoration:underline dashed;
+}
+a:visited{
+    color:rgb(255, 255, 255);
+}
+a:hover{
+    color:rgb(255, 175, 28);
+}
