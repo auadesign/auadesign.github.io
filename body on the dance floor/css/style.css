@@ -1,0 +1,520 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+
+.container {
+    width: 100%;
+    /* height: 100%;  */
+    /* overflow: hidden;  */
+    margin: auto;
+    float: left;
+    position: relative;
+    text-align: center;
+    left: 0;
+    top: 0;
+    /* box-sizing: border-box; */
+    /* max-width: 980px; */
+}
+
+
+h1 {
+    color: #000;
+    text-align: justify;
+    font-family: Futura;
+    font-size: 14rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -20px;
+    position: absolute;
+    z-index: 4;
+    left: 10%;
+}
+
+h2 {
+    color: #EE4381;
+    text-align: justify;
+    font-family: Futura;
+    font-size: 115px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -3.84px;
+}
+
+p {
+    color: #FFF;
+    text-align: justify;
+    font-family: DotGothic16;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.72px;
+}
+
+/* cover */
+
+#bodyonthe {
+    padding-top: 3rem;
+}
+#dancefloor {
+    padding-top: 49rem;
+}
+
+
+#dance {
+    /* display: block; */
+    top:0;
+    position: absolute;
+    z-index: 1;
+    width: 120%;
+    left: 0;
+    /* overflow: hidden; */
+}
+#dance3{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    animation-name: blink;
+    animation-delay: .25s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+#dance3{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-iteration-count: infinite;
+}
+
+#dance2{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    animation-name: blink;
+    animation-delay: .75s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+/* dance floor animation */
+
+                   
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.00001% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+#body {
+    display: block;
+    position: absolute;
+    z-index: 4;
+    top: 18%;
+    left: 17%;
+    width: 75%;
+}
+
+#texture1 {
+    display: block;
+    position: absolute;
+    width: 120%;
+    background-blend-mode: plus-lighter;
+    left:0;
+    top: 0;
+    z-index: 3;
+    opacity: 70%;
+}
+
+#texture2 {
+    display: block;
+    position: absolute;
+    width: 120%;
+    background-blend-mode: hard-light;
+    left:0;
+    top: 0;
+    z-index: 2;
+    opacity: 70%;
+}
+
+/* victim */
+
+#img2 {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 120%;
+    top: 170%;
+    left: 0;
+    /* overflow: hidden; */
+ }
+
+
+ #id {
+    display: block;
+    position: absolute;
+    /* float:left; */
+    z-index: 2;
+    width: 50%;
+    top: 220%;
+    left: 5%;
+    transition: transform .5s ease;
+ }
+
+ #id:hover {
+    transform: rotate(3deg);
+ }
+
+ #victim {
+    display: inline;
+    position:absolute;
+    z-index: 4;
+    top: 220%;
+    left: 65%;
+    width: 30%;
+}
+
+/* character cards */
+
+#photoimg {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 120%;
+    top: 317%;
+    left: 0;
+}
+
+.photos {
+    position: absolute;
+    top: 342%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    z-index: 2;
+    gap: 4rem;
+    width: 100%;
+    padding: 2rem;
+    left: 4%;
+}
+
+.photos img{
+    width: 100%;
+}
+
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    position: relative;
+}
+
+.flip-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-back {
+    transform: rotateY(180deg);
+}
+
+/* evidence */
+
+#img3 {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 120%;
+    top: 484%;
+    left: 0;
+}
+
+#small-bag {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    top: 520%;
+    left: 5%;
+    transition: transform .5s ease;
+}
+
+#small-bag:hover {
+    transform: rotate(-3deg);
+}
+
+
+#alice-statement{
+    display: inline;
+    position:absolute;
+    z-index: 4;
+    top: 535%;
+    left: 65%;
+    width: 30%;
+}
+
+#img4 {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 120%;
+    top: 667%;
+    left: 0;
+}
+
+#article {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 700%;
+    left: 8%;
+}
+
+#mag-statement {
+    display: inline;
+    position:absolute;
+    z-index: 4;
+    top: 960%;
+    width: 30%;
+    left: 10%;
+}
+
+#note-desc {
+    display: inline;
+    position:absolute;
+    z-index: 4;
+    top: 1030%;
+    width: 30%;
+    left: 10%;
+}
+
+#note {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    top: 950%;
+    left: 60%;
+    rotate: -3deg;
+    transition: transform .5s ease;
+}
+
+#note:hover {
+    transform: rotate(3deg);
+}
+
+#img5 {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 120%;
+    top: 1061%;
+    left: 0;
+}
+
+#august-statement{
+    display: inline;
+    position:absolute;
+    z-index: 4;
+    top: 1080%;
+    width: 30%;
+    left: 10%;
+}
+
+#stephan-statement{
+    display: inline;
+    position:absolute;
+    z-index: 4;
+    top: 1120%;
+    width: 30%;
+    left: 65%;
+}
+
+#big-bag {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 1180%;
+    left: 5%;
+    transition: transform .5s ease;
+}
+
+#big-bag:hover {
+    transform: rotate(-3deg);
+}
+
+#bigbag-note {
+    display: inline;
+    position:absolute;
+    z-index: 4;
+    top: 1350%;
+    width: 30%;
+    left: 10%;
+}
+
+
+#img6 {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 120%;
+    top: 1338%;
+    left: 0;
+}
+
+#amelia-statement {
+    display: inline;
+    position:absolute;
+    z-index: 4;
+    top: 1400%;
+    width: 30%;
+    left: 65%;
+}
+
+#phone-note {
+    display: inline;
+    position:absolute;
+    z-index: 4;
+    top: 1500%;
+    width: 30%;
+    left: 65%;
+}
+
+#chris-phone{
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 40%;
+    top: 1400%;
+    left: 5%;
+    rotate: -3deg;
+    transition: transform .5s ease;
+}
+
+#chris-phone:hover {
+    transform: rotate(3deg);
+}
+
+#chris-phone img {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#lisa-statement {
+    display: inline;
+    position:absolute;
+    z-index: 4;
+    top: 1550%;
+    width: 30%;
+    left: 10%;
+}
+
+#mag-derek {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    width: 40%;
+    top: 1545%;
+    left: 60%;
+    rotate: 3deg;
+    transition: transform .5s ease;
+}
+
+#mag-derek:hover {
+    transform: rotate(-3deg);
+}
+
+#mag-derek img {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#who {
+    display: inline;
+    position:absolute;
+    z-index: 4;
+    top: 1650%;
+    width: 100%;
+    left: 10%;
+}
+
+#guess {
+    position: absolute;
+    display:block;
+    top: 1680%;
+    z-index:4;
+    left: 45%;
+}
+input [type=text]{
+    width: 100%;
+   
+}
+
+#feedback {
+    position: absolute;
+    display:block;
+    top: 1690%;
+    z-index:4;
+    left: 35%;
+    width: 50%
+}
+
+footer {
+    position: absolute;
+    display:block;
+    top: 900rem;
+    z-index: 4;
+}
+
+/* wiggle aimations */
+
+
+
+#id:hover{
+    animation-name: wiggle4;
+    animation-duration: 1s;
+}
