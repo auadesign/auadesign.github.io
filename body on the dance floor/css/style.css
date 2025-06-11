@@ -489,6 +489,7 @@ p {
     z-index:4;
     left: 45%;
 }
+
 input [type=text]{
     width: 100%;
    
@@ -502,6 +503,25 @@ input [type=text]{
     left: 35%;
     width: 50%
 }
+
+/* #guess-container {
+    position: absolute;
+    top: 1680%;
+    left: 45%; 
+    z-index: 4;
+}
+
+#guess {
+    width: 100%;
+} */
+
+/* #feedback {
+    position:absolute;
+    width: 100%;
+    margin-top: 1rem; 
+} */
+
+
 
 footer {
     position: absolute;

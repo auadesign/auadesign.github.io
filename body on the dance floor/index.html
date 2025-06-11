@@ -263,13 +263,19 @@
           <h2>WHO DONE IT?</h2>
         </div>
 
-        <div id="guess">
-          <form>
-            <input type="text" id="user-guess">
-            <input type="submit" value="guess">
-          </form>
-        </div>
-        <p id="feedback"></p>
+
+          <div id="guess">
+            <form id="guess-form">
+              <input type="text" id="guess-input">
+              <input type="submit" value="guess">
+            </form>
+            <p id="feedback"></p>
+          </div>
+
+
+        
+        
+
     </div>
 
 <!-- java -->
@@ -278,7 +284,7 @@
       
       const correctAnswers = ["stephan", "stephan romano"]; 
       const form = document.getElementById("guess-form");
-      const input = document.getElementById("guess-input");
+      const input = document.getElementById("user-guess");
       const feedback = document.getElementById("feedback");
     
 
